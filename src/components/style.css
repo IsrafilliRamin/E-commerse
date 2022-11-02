@@ -1,0 +1,96 @@
+.btn:hover{
+    color: white !important;
+}
+.navbar{
+    box-shadow: 0 0 10px gray;
+}
+
+.card-img-overlay{
+    z-index: 100;
+    color: rgb(7, 7, 7);
+    
+}
+
+.card-img-overlay .card-title,.card-text{
+    font-family: sans-serif;
+    font-weight: 550;
+    font-style: italic;
+}
+
+.btn{
+    border: 2px solid black !important;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* responsive design */
+
+@media screen and (max-width:1024px){
+    .buttons{
+      display: flex;
+    }
+}
+@media screen and (max-width:540px){
+    .navbar-toggler{
+        position: fixed;
+        right: 10px;
+        z-index: 1000;
+      
+    }
+    .show{
+        position: fixed !important;
+    }
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vw;
+    }
+    .card-img{
+        object-fit: cover !important;
+    }
+    .btn{
+        width: 130px !important;
+        margin: 0px !important;
+    }
+    #root{
+        overflow: hidden !important;
+    }
+    #contnav{
+      width: 500px !important;
+    }
+    .navbar-collapse{
+        background-color: rgb(206, 206, 189) !important;
+        position: absolute;
+        top: 0px;
+        z-index: 1000;
+        left: 14px;
+        height: 100vh;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont{
+        width: 50%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:414px){
+    .btn{
+        width: 130px !important;
+        margin: 0px !important;
+    }
+    .card-img{
+        object-fit: cover !important;
+    }
+    .cont{
+        width: 60%;
+    }
+}
